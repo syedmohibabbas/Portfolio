@@ -3015,3 +3015,15 @@ body { background:#FFFFFF !important; color:#000000 !important; }
   transform: scale(0.909091);
   transform-origin: center;
 }
+
+
+/* My Skills section: Canva logo zoomed out by factor 1.4. */
+.tool-chip[data-tool="Canva"] .tool-logo img {
+  transform: scale(0.714286) !important;
+  transform-origin: center;
+}
+@media (max-width: 600px) {
+  .tool-chip[data-tool="Canva"] .tool-logo img {
+    transform: scale(0.714286) !important;
+  }
+}
