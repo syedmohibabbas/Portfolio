@@ -2849,3 +2849,24 @@ body { background:#FFFFFF !important; color:#000000 !important; }
     box-sizing: border-box;
   }
 }
+
+
+/* Fine-tune individual tool logo scale without changing chip dimensions. */
+.tool-chip[data-tool="Canva"] .tool-logo img {
+  width: 22px;
+  height: 22px;
+}
+.tool-chip[data-tool="Meta Ads"] .tool-logo img {
+  width: 28px;
+  height: 28px;
+}
+@media (max-width: 600px) {
+  .tool-chip[data-tool="Canva"] .tool-logo img {
+    width: 20px;
+    height: 20px;
+  }
+  .tool-chip[data-tool="Meta Ads"] .tool-logo img {
+    width: 24px;
+    height: 24px;
+  }
+}
