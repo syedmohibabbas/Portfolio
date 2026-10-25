@@ -2731,3 +2731,46 @@ body { background:#FFFFFF !important; color:#000000 !important; }
   width: 27px;
   height: 27px;
 }
+
+
+/* My Skills tools: slightly more compact, equal logo boxes, single horizontal row. */
+.tool-list {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  overflow-x: auto;
+  padding: 2px 1px 6px;
+  scrollbar-width: thin;
+}
+.tool-chip {
+  flex: 0 0 auto;
+  gap: 6px;
+  padding: 6px 9px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+.tool-logo {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+}
+.tool-logo img,
+.tool-chip[data-tool="Canva"] .tool-logo img,
+.tool-chip[data-tool="Meta Ads"] .tool-logo img,
+.tool-chip[data-tool="Google Ads"] .tool-logo img,
+.tool-chip[data-tool="Google Tools"] .tool-logo img {
+  width: 25px;
+  height: 25px;
+}
+@media (max-width: 600px) {
+  .tool-list {
+    gap: 7px;
+    overflow-x: auto;
+  }
+  .tool-chip {
+    font-size: 9px;
+    padding: 6px 8px;
+  }
+}
