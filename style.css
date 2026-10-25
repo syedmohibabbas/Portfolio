@@ -3055,3 +3055,10 @@ body { background:#FFFFFF !important; color:#000000 !important; }
   transform: scale(0.769231);
   transform-origin: center;
 }
+
+
+/* Navbar and footer logo: zoom in 1.5x inside the existing logo mark. */
+.brand-mark.logo-switch .theme-logo {
+  transform: scale(1.5) !important;
+  transform-origin: center center !important;
+}
