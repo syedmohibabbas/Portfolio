@@ -2945,3 +2945,10 @@ body { background:#FFFFFF !important; color:#000000 !important; }
     transform: scale(1.5);
   }
 }
+
+
+/* Use the user's uploaded original social/contact logo images. */
+.social-icon-image { width: 100%; height: 100%; object-fit: contain; display: block; }
+.social:has(.social-icon-image) { padding: 0; overflow: hidden; }
+.contact-icon img { width: 25px; height: 25px; object-fit: contain; display: block; }
+.hire-contact-icon img { width: 24px; height: 24px; object-fit: contain; display: block; }
