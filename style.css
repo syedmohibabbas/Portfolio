@@ -2952,3 +2952,14 @@ body { background:#FFFFFF !important; color:#000000 !important; }
 .social:has(.social-icon-image) { padding: 0; overflow: hidden; }
 .contact-icon img { width: 25px; height: 25px; object-fit: contain; display: block; }
 .hire-contact-icon img { width: 24px; height: 24px; object-fit: contain; display: block; }
+
+
+/* Remove the old circular/boxed placeholders behind uploaded brand logos. */
+.social:has(.social-icon-image) { border: 0 !important; background: transparent !important; border-radius: 0 !important; overflow: visible !important; }
+.social:has(.social-icon-image):hover { background: transparent !important; }
+.social-icon-image { width: 31px; height: 31px; object-fit: contain; }
+.contact-icon:has(img), .hire-contact-icon:has(img) { border: 0 !important; background: transparent !important; border-radius: 0 !important; }
+.contact-icon:has(img) { width: 33px; height: 33px; flex-basis: 33px; }
+.contact-icon img { width: 33px; height: 33px; }
+.hire-contact-icon:has(img) { width: 31px; height: 31px; flex-basis: 31px; }
+.hire-contact-icon img { width: 31px; height: 31px; }
