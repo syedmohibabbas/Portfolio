@@ -2870,3 +2870,24 @@ body { background:#FFFFFF !important; color:#000000 !important; }
     height: 24px;
   }
 }
+
+
+/* Corrected logo scale: Canva slightly larger, Meta Ads slightly smaller. */
+.tool-chip[data-tool="Canva"] .tool-logo img {
+  width: 28px;
+  height: 28px;
+}
+.tool-chip[data-tool="Meta Ads"] .tool-logo img {
+  width: 24px;
+  height: 24px;
+}
+@media (max-width: 600px) {
+  .tool-chip[data-tool="Canva"] .tool-logo img {
+    width: 24px;
+    height: 24px;
+  }
+  .tool-chip[data-tool="Meta Ads"] .tool-logo img {
+    width: 21px;
+    height: 21px;
+  }
+}
