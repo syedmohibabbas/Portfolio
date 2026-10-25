@@ -2999,3 +2999,11 @@ body { background:#FFFFFF !important; color:#000000 !important; }
   transform: scale(0.714286);
   transform-origin: center;
 }
+
+
+/* Latest WhatsApp adjustment: zoom out by factor 1.3 on Home and Hire Me popup only. */
+.social-row .social[href^="https://wa.me"] .social-icon-image,
+.hire-contact-grid .hire-contact[href^="https://wa.me"] .hire-contact-icon img {
+  transform: scale(0.769231);
+  transform-origin: center;
+}
