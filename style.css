@@ -2963,3 +2963,13 @@ body { background:#FFFFFF !important; color:#000000 !important; }
 .contact-icon img { width: 33px; height: 33px; }
 .hire-contact-icon:has(img) { width: 31px; height: 31px; flex-basis: 31px; }
 .hire-contact-icon img { width: 31px; height: 31px; }
+
+
+/* Home + Hire Me popup only: Gmail and Facebook logos zoomed out by factor 1.2. */
+.social-row .gmail-social .social-icon-image,
+.social-row .social[href^="https://www.facebook.com"] .social-icon-image,
+.hire-contact-grid .hire-contact[href^="mailto:"] .hire-contact-icon img,
+.hire-contact-grid .hire-contact[href^="https://www.facebook.com"] .hire-contact-icon img {
+  transform: scale(0.833333);
+  transform-origin: center;
+}
