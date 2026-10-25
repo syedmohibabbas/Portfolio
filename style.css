@@ -3062,3 +3062,10 @@ body { background:#FFFFFF !important; color:#000000 !important; }
   transform: scale(1.5) !important;
   transform-origin: center center !important;
 }
+
+
+/* Navbar and footer logo: final scale set to 1.4x. */
+.brand-mark.logo-switch .theme-logo {
+  transform: scale(1.4) !important;
+  transform-origin: center center !important;
+}
