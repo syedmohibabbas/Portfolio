@@ -2828,3 +2828,24 @@ body { background:#FFFFFF !important; color:#000000 !important; }
     justify-items: center;
   }
 }
+
+
+/* Desktop: three equal-width chips per row, matching the reference layout.
+   Mobile rules above remain unchanged. */
+@media (min-width: 601px) {
+  .tool-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: stretch;
+    justify-items: stretch;
+    align-items: center;
+    gap: 8px;
+    overflow: visible;
+  }
+  .tool-chip {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    box-sizing: border-box;
+  }
+}
