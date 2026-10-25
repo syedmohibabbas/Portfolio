@@ -2925,3 +2925,23 @@ body { background:#FFFFFF !important; color:#000000 !important; }
     height: 26px;
   }
 }
+
+
+/* Canva mark was constrained by the logo box; scale the actual image visually. */
+.tool-chip[data-tool="Canva"] .tool-logo img {
+  width: 25px !important;
+  height: 25px !important;
+  max-width: none !important;
+  max-height: none !important;
+  transform: scale(1.2);
+  transform-origin: center;
+}
+@media (max-width: 600px) {
+  .tool-chip[data-tool="Canva"] .tool-logo img {
+    width: 22px !important;
+    height: 22px !important;
+    max-width: none !important;
+    max-height: none !important;
+    transform: scale(1.2);
+  }
+}
