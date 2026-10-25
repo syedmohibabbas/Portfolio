@@ -627,7 +627,7 @@ console.log("Portfolio initialized — static GitHub Pages mode.");
 
   function nextColor() {
     const color = colors[colorIndex % colors.length];
-    colorIndex += 1;
+    colorIndex = (colorIndex + 1) % colors.length;
     return color;
   }
 
@@ -669,6 +669,10 @@ console.log("Portfolio initialized — static GitHub Pages mode.");
 
     if (activeLetter) {
       activeLetter.classList.remove("is-letter-active");
+    }
+
+    if (!activeLetter) {
+      colorIndex = Math.floor(Math.random() * colors.length);
     }
 
     clearTimer(letter);
