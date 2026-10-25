@@ -2774,3 +2774,48 @@ body { background:#FFFFFF !important; color:#000000 !important; }
     padding: 6px 8px;
   }
 }
+
+
+/* My Skills tools: show exactly two rows of three compact chips. */
+.tool-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, max-content));
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  overflow: visible;
+  padding: 2px 1px 6px;
+}
+.tool-chip {
+  min-width: 0;
+  width: max-content;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+@media (max-width: 600px) {
+  .tool-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 7px;
+  }
+  .tool-chip {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 5px;
+    padding: 6px 6px;
+    font-size: 9px;
+  }
+  .tool-logo {
+    width: 25px;
+    height: 25px;
+    flex: 0 0 25px;
+  }
+  .tool-logo img,
+  .tool-chip[data-tool="Canva"] .tool-logo img,
+  .tool-chip[data-tool="Meta Ads"] .tool-logo img,
+  .tool-chip[data-tool="Google Ads"] .tool-logo img,
+  .tool-chip[data-tool="Google Tools"] .tool-logo img {
+    width: 22px;
+    height: 22px;
+  }
+}
