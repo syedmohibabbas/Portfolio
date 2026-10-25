@@ -3039,3 +3039,11 @@ body { background:#FFFFFF !important; color:#000000 !important; }
     transform: scale(1.4) !important;
   }
 }
+
+
+/* Contact section only: telephone logo zoomed out by factor 1.2. */
+.contact-list .contact-item a[href^="tel:"] .contact-icon img,
+.contact-section a[href^="tel:"] .contact-icon img {
+  transform: scale(0.833333);
+  transform-origin: center;
+}
