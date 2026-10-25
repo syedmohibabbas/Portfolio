@@ -2912,3 +2912,16 @@ body { background:#FFFFFF !important; color:#000000 !important; }
     height: 20px;
   }
 }
+
+
+/* Canva logo: one more very small zoom-in adjustment. */
+.tool-chip[data-tool="Canva"] .tool-logo img {
+  width: 30px;
+  height: 30px;
+}
+@media (max-width: 600px) {
+  .tool-chip[data-tool="Canva"] .tool-logo img {
+    width: 26px;
+    height: 26px;
+  }
+}
