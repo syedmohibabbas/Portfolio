@@ -3069,3 +3069,14 @@ body { background:#FFFFFF !important; color:#000000 !important; }
   transform: scale(1.4) !important;
   transform-origin: center center !important;
 }
+
+
+/* Separate navbar and footer logo zoom levels. */
+.site-header .brand-mark.logo-switch .theme-logo {
+  transform: scale(1.2) !important;
+  transform-origin: center center !important;
+}
+.footer .brand-mark.logo-switch .theme-logo {
+  transform: scale(0.833333) !important;
+  transform-origin: center center !important;
+}
