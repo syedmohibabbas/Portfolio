@@ -2986,3 +2986,16 @@ body { background:#FFFFFF !important; color:#000000 !important; }
   transform: scale(1.1);
   transform-origin: center;
 }
+
+
+/* Latest Home + Hire Me logo tuning: WhatsApp 1.2x zoom-in, telephone 1.4x zoom-out. */
+.social-row .social[href^="https://wa.me"] .social-icon-image,
+.hire-contact-grid .hire-contact[href^="https://wa.me"] .hire-contact-icon img {
+  transform: scale(1.2);
+  transform-origin: center;
+}
+.social-row .social[href^="tel:"] .social-icon-image,
+.hire-contact-grid .hire-contact[href^="tel:"] .hire-contact-icon img {
+  transform: scale(0.714286);
+  transform-origin: center;
+}
