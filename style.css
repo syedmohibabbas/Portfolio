@@ -3080,3 +3080,10 @@ body { background:#FFFFFF !important; color:#000000 !important; }
   transform: scale(0.833333) !important;
   transform-origin: center center !important;
 }
+
+
+/* Footer logo: restore normal 1x scale. */
+.footer .brand-mark.logo-switch .theme-logo {
+  transform: scale(1) !important;
+  transform-origin: center center !important;
+}
