@@ -614,10 +614,8 @@ console.log("Portfolio initialized — static GitHub Pages mode.");
   if (!heroLetters.length) return;
 
   const colors = [
-    "#ff0000", "#FF5500", "#FBBC05", "#005AFF", "#015900",
-    "#27B11D", "#9000FF", "#D500F9", "#01befe", "#ff7d00",
-    "#0015ff", "#79c300", "#ffb703", "#ea8a00", "#00b4d8",
-    "#39a325", "#ff6d00"
+    "#ff0000", "#ff6d00", "#ffb703", "#79c300", "#39a325",
+    "#27B11D", "#01befe", "#005AFF", "#D500F9", "#9000FF"
   ];
 
   const SHAKE_DURATION = 1800;
