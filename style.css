@@ -3047,3 +3047,11 @@ body { background:#FFFFFF !important; color:#000000 !important; }
   transform: scale(0.833333);
   transform-origin: center;
 }
+
+
+/* Contact section only: telephone logo zoomed out by factor 1.3. */
+.contact-list .contact-item a[href^="tel:"] .contact-icon img,
+.contact-section a[href^="tel:"] .contact-icon img {
+  transform: scale(0.769231);
+  transform-origin: center;
+}
