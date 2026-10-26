@@ -3102,3 +3102,20 @@ body { background:#FFFFFF !important; color:#000000 !important; }
   margin: 0 !important;
   flex: 0 0 2px !important;
 }
+
+
+/* Hamburger: center the three lines while preserving clear, even spacing. */
+.site-header .menu-toggle {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+  gap: 5px !important;
+}
+.site-header .menu-toggle span {
+  width: 100% !important;
+  height: 2px !important;
+  min-height: 2px !important;
+  margin: 0 !important;
+  flex: 0 0 2px !important;
+}
