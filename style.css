@@ -3134,3 +3134,26 @@ body { background:#FFFFFF !important; color:#000000 !important; }
 @media (max-width: 760px) {
   .site-header .brand-name { font-size: 12px !important; }
 }
+
+
+/* Mobile navigation popup links: match the Hire Me button's press animation. */
+@media (max-width: 760px) {
+  .nav a,
+  .mobile-nav a,
+  .nav-menu a,
+  .nav-link {
+    transition: transform .18s cubic-bezier(.22,.75,.2,1), background .18s ease, opacity .18s ease !important;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .nav a:active,
+  .mobile-nav a:active,
+  .nav-menu a:active,
+  .nav-link:active,
+  .nav a.pressed,
+  .mobile-nav a.pressed,
+  .nav-menu a.pressed,
+  .nav-link.pressed {
+    transform: scale(.96) !important;
+  }
+}
