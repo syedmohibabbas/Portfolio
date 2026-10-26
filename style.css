@@ -3166,3 +3166,30 @@ body { background:#FFFFFF !important; color:#000000 !important; }
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
 }
+
+
+/* Hire Me popup: override the global dark modal theme with solid white. */
+#hireModal .modal-box.glass.hire-modal-box {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
+  color: #000000 !important;
+  border-color: #e5e5e5 !important;
+  box-shadow: 0 28px 90px rgba(0,0,0,.18) !important;
+}
+#hireModal .modal-box.glass.hire-modal-box h2,
+#hireModal .modal-box.glass.hire-modal-box .hire-modal-intro,
+#hireModal .modal-box.glass.hire-modal-box .hire-credential strong,
+#hireModal .modal-box.glass.hire-modal-box .hire-contact strong {
+  color: #000000 !important;
+}
+#hireModal .modal-box.glass.hire-modal-box .hire-credential span,
+#hireModal .modal-box.glass.hire-modal-box .hire-contact small,
+#hireModal .modal-box.glass.hire-modal-box .modal-close {
+  color: #555555 !important;
+}
+#hireModal .modal-box.glass.hire-modal-box .hire-credential,
+#hireModal .modal-box.glass.hire-modal-box .hire-contact {
+  background: #ffffff !important;
+  border-color: #e5e5e5 !important;
+}
