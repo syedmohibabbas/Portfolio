@@ -3209,3 +3209,26 @@ body { background:#FFFFFF !important; color:#000000 !important; }
     min-height: 370px !important;
   }
 }
+
+
+/* Mobile portrait: show the complete profile photo without cropping, while keeping the hero compact. */
+@media (max-width: 760px) {
+  .portrait,
+  .portrait-frame {
+    overflow: hidden;
+  }
+  .portrait .profile-image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+  }
+  .hero-visual {
+    min-height: 390px !important;
+  }
+}
+@media (max-width: 600px) {
+  .hero-visual {
+    min-height: 370px !important;
+  }
+}
