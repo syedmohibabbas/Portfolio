@@ -3232,3 +3232,29 @@ body { background:#FFFFFF !important; color:#000000 !important; }
     min-height: 370px !important;
   }
 }
+
+
+/* Definitive mobile fix: prevent every portrait image rule from cropping the bottom of the photo. */
+@media (max-width: 760px) {
+  .hero-visual .portrait-frame {
+    height: 76% !important;
+    overflow: visible !important;
+  }
+  .hero-visual .portrait {
+    height: 100% !important;
+    overflow: hidden !important;
+  }
+  .hero-visual .portrait img.profile-image,
+  .hero-visual img.profile-image {
+    display: block !important;
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+    transform: none !important;
+  }
+}
