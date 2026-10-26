@@ -3123,3 +3123,7 @@ body { background:#FFFFFF !important; color:#000000 !important; }
     display: flex !important;
   }
 }
+
+
+/* Requested navbar height: 64px on desktop and mobile. */
+.site-header { height: 64px !important; }
