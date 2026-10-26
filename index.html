@@ -8,6 +8,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="./logo-circle.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="./profile-photo.png" fetchpriority="high">
+  <link rel="preload" as="image" href="./gmail.png.png">
+  <link rel="preload" as="image" href="./whatsapp.png.png">
+  <link rel="preload" as="image" href="./telephone.png.png">
+  <link rel="preload" as="image" href="./facebook.png.png">
+  <link rel="preload" as="image" href="./photoshop.png.png">
+  <link rel="preload" as="image" href="./illustrator.png.png">
+  <link rel="preload" as="image" href="./premiere-pro.png.png">
+  <link rel="preload" as="image" href="./canva.png.png">
+  <link rel="preload" as="image" href="./google.png.png">
+  <link rel="preload" as="image" href="./meta.png.png">
   <link rel="stylesheet" href="./style.css?v=20261026-hamburger-contacts-1">
 
 </head>
@@ -20,7 +32,7 @@
   <header class="site-header" id="top">
     <a class="brand" href="#home" aria-label="Syed Mohib Abbas home">
       <span class="brand-mark logo-switch" aria-hidden="true">
-        <img class="theme-logo" src="./logo-circle.jpg" alt="">
+        <img class="theme-logo" src="./logo-circle.jpg" alt="" loading="eager" fetchpriority="high" decoding="async">
       </span>
       <span class="brand-name">SYED MOHIB ABBAS</span>
     </a>
@@ -63,16 +75,16 @@
 
         <div class="social-row">
           <a class="social magnetic gmail-social" href="mailto:shahgstudiosbusiness4211@gmail.com" aria-label="Gmail" title="Gmail">
-            <img class="social-icon-image" src="./gmail.png.png" alt="" loading="lazy">
+            <img class="social-icon-image" src="./gmail.png.png" alt="" loading="eager" decoding="async">
           </a>
           <a class="social magnetic" href="https://wa.me/923334170342" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp">
-            <img class="social-icon-image" src="./whatsapp.png.png" alt="" loading="lazy">
+            <img class="social-icon-image" src="./whatsapp.png.png" alt="" loading="eager" decoding="async">
           </a>
           <a class="social magnetic" href="tel:+923334170342" aria-label="Phone" title="Phone">
-            <img class="social-icon-image" src="./telephone.png.png" alt="" loading="lazy">
+            <img class="social-icon-image" src="./telephone.png.png" alt="" loading="eager" decoding="async">
           </a>
           <a class="social magnetic" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">
-            <img class="social-icon-image" src="./facebook.png.png" alt="" loading="lazy">
+            <img class="social-icon-image" src="./facebook.png.png" alt="" loading="eager" decoding="async">
           </a>
         </div>
       </div>
@@ -80,7 +92,7 @@
       <div class="hero-visual reveal">
         <div class="portrait-frame">
           <div class="portrait">
-            <img class="profile-image" src="./profile-photo.png" alt="Profile photo">
+            <img class="profile-image" src="./profile-photo.png" alt="Profile photo" loading="eager" fetchpriority="high" decoding="async">
           </div>
         </div>
 
@@ -160,12 +172,12 @@
         </div>
 
         <div class="tool-list reveal" aria-label="Tools">
-          <button class="tool-chip tool-action" type="button" data-tool="Photoshop"><span class="tool-logo" aria-hidden="true"><img src="./photoshop.png.png" alt="" loading="lazy"></span> Photoshop</button>
-          <button class="tool-chip tool-action" type="button" data-tool="Illustrator"><span class="tool-logo" aria-hidden="true"><img src="./illustrator.png.png" alt="" loading="lazy"></span> Illustrator</button>
-          <button class="tool-chip tool-action" type="button" data-tool="Premiere Pro"><span class="tool-logo" aria-hidden="true"><img src="./premiere-pro.png.png" alt="" loading="lazy"></span> Premiere Pro</button>
-          <button class="tool-chip tool-action" type="button" data-tool="Canva"><span class="tool-logo" aria-hidden="true"><img src="./canva.png.png" alt="" loading="lazy"></span> Canva</button>
-          <button class="tool-chip tool-action" type="button" data-tool="Google Ads"><span class="tool-logo" aria-hidden="true"><img src="./google.png.png" alt="" loading="lazy"></span> Google Ads</button>
-          <button class="tool-chip tool-action" type="button" data-tool="Meta Ads"><span class="tool-logo" aria-hidden="true"><img src="./meta.png.png" alt="" loading="lazy"></span> Meta Ads</button>
+          <button class="tool-chip tool-action" type="button" data-tool="Photoshop"><span class="tool-logo" aria-hidden="true"><img src="./photoshop.png.png" alt="" loading="eager" decoding="async"></span> Photoshop</button>
+          <button class="tool-chip tool-action" type="button" data-tool="Illustrator"><span class="tool-logo" aria-hidden="true"><img src="./illustrator.png.png" alt="" loading="eager" decoding="async"></span> Illustrator</button>
+          <button class="tool-chip tool-action" type="button" data-tool="Premiere Pro"><span class="tool-logo" aria-hidden="true"><img src="./premiere-pro.png.png" alt="" loading="eager" decoding="async"></span> Premiere Pro</button>
+          <button class="tool-chip tool-action" type="button" data-tool="Canva"><span class="tool-logo" aria-hidden="true"><img src="./canva.png.png" alt="" loading="eager" decoding="async"></span> Canva</button>
+          <button class="tool-chip tool-action" type="button" data-tool="Google Ads"><span class="tool-logo" aria-hidden="true"><img src="./google.png.png" alt="" loading="eager" decoding="async"></span> Google Ads</button>
+          <button class="tool-chip tool-action" type="button" data-tool="Meta Ads"><span class="tool-logo" aria-hidden="true"><img src="./meta.png.png" alt="" loading="eager" decoding="async"></span> Meta Ads</button>
         </div>
         <div class="skills-note reveal">Tap a skill or tool to add a portfolio link or a local sample file.</div>
       </div>
@@ -315,16 +327,16 @@
 
       <div class="contact-list">
         <a class="contact-item glass magnetic reveal" href="mailto:shahgstudiosbusiness4211@gmail.com">
-          <span class="contact-icon"><img src="./gmail.png.png" alt="" loading="lazy"></span><span><small>Email</small><b>shahgstudiosbusiness4211@gmail.com</b></span>
+          <span class="contact-icon"><img src="./gmail.png.png" alt="" loading="eager" decoding="async"></span><span><small>Email</small><b>shahgstudiosbusiness4211@gmail.com</b></span>
         </a>
         <a class="contact-item glass magnetic reveal" href="https://wa.me/923334170342" target="_blank" rel="noopener">
-          <span class="contact-icon"><img src="./whatsapp.png.png" alt="" loading="lazy"></span><span><small>WhatsApp</small><b>03334170342</b></span>
+          <span class="contact-icon"><img src="./whatsapp.png.png" alt="" loading="eager" decoding="async"></span><span><small>WhatsApp</small><b>03334170342</b></span>
         </a>
         <a class="contact-item glass magnetic reveal" href="tel:+923334170342">
-          <span class="contact-icon"><img src="./telephone.png.png" alt="" loading="lazy"></span><span><small>Phone</small><b>03334170342</b></span>
+          <span class="contact-icon"><img src="./telephone.png.png" alt="" loading="eager" decoding="async"></span><span><small>Phone</small><b>03334170342</b></span>
         </a>
         <a class="contact-item glass magnetic reveal" href="https://www.facebook.com/" target="_blank" rel="noopener">
-          <span class="contact-icon"><img src="./facebook.png.png" alt="" loading="lazy"></span><span><small>Facebook</small><b>facebook.com</b></span>
+          <span class="contact-icon"><img src="./facebook.png.png" alt="" loading="eager" decoding="async"></span><span><small>Facebook</small><b>facebook.com</b></span>
         </a>
       </div>
     </section>
@@ -357,10 +369,10 @@
       </div>
 
       <div class="hire-contact-grid">
-        <a class="hire-contact" href="mailto:shahgstudiosbusiness4211@gmail.com"><span class="hire-contact-icon"><img src="./gmail.png.png" alt="" loading="lazy"></span><span><small>Gmail</small><strong>shahgstudiosbusiness4211@gmail.com</strong></span></a>
-        <a class="hire-contact" href="https://wa.me/923334170342" target="_blank" rel="noopener"><span class="hire-contact-icon"><img src="./whatsapp.png.png" alt="" loading="lazy"></span><span><small>WhatsApp</small><strong>+92 333 4170342</strong></span></a>
-        <a class="hire-contact" href="tel:+923334170342"><span class="hire-contact-icon"><img src="./telephone.png.png" alt="" loading="lazy"></span><span><small>Phone</small><strong>03334170342</strong></span></a>
-        <a class="hire-contact" href="https://www.facebook.com/" target="_blank" rel="noopener"><span class="hire-contact-icon"><img src="./facebook.png.png" alt="" loading="lazy"></span><span><small>Facebook</small><strong>facebook.com</strong></span></a>
+        <a class="hire-contact" href="mailto:shahgstudiosbusiness4211@gmail.com"><span class="hire-contact-icon"><img src="./gmail.png.png" alt="" loading="eager" decoding="async"></span><span><small>Gmail</small><strong>shahgstudiosbusiness4211@gmail.com</strong></span></a>
+        <a class="hire-contact" href="https://wa.me/923334170342" target="_blank" rel="noopener"><span class="hire-contact-icon"><img src="./whatsapp.png.png" alt="" loading="eager" decoding="async"></span><span><small>WhatsApp</small><strong>+92 333 4170342</strong></span></a>
+        <a class="hire-contact" href="tel:+923334170342"><span class="hire-contact-icon"><img src="./telephone.png.png" alt="" loading="eager" decoding="async"></span><span><small>Phone</small><strong>03334170342</strong></span></a>
+        <a class="hire-contact" href="https://www.facebook.com/" target="_blank" rel="noopener"><span class="hire-contact-icon"><img src="./facebook.png.png" alt="" loading="eager" decoding="async"></span><span><small>Facebook</small><strong>facebook.com</strong></span></a>
       </div>
 
       <div class="hire-actions">
