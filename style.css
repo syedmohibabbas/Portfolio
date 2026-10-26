@@ -3260,9 +3260,3 @@ body { background:#FFFFFF !important; color:#000000 !important; }
 }
 
 
-/* User request: zoom the profile photo out by 10% on desktop and mobile. */
-.hero-visual .portrait img.profile-image,
-.hero-visual img.profile-image {
-  transform: scale(0.9) !important;
-  transform-origin: center center !important;
-}
