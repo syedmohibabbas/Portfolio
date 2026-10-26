@@ -3087,3 +3087,18 @@ body { background:#FFFFFF !important; color:#000000 !important; }
   transform: scale(1) !important;
   transform-origin: center center !important;
 }
+
+
+/* Hamburger icon: center all three lines inside the button on desktop and mobile. */
+.site-header .menu-toggle {
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+  gap: 5px !important;
+}
+.site-header .menu-toggle span {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+  flex: 0 0 2px !important;
+}
