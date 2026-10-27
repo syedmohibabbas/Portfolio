@@ -2689,6 +2689,7 @@ body { background:#FFFFFF !important; color:#000000 !important; }
     width: 32px !important;
     height: 35px !important;
     min-width: 32px !important;
+    min-height: 35px !important;
     padding: 7px 8px !important;
     border-radius: 8px !important;
     background: transparent !important;
