@@ -549,11 +549,18 @@ window.addEventListener(
 );
 
 backTop?.addEventListener("click", () => {
+  backTop.classList.add("rocket-trail");
   window.scrollTo({
     top: 0,
     behavior: "smooth"
   });
 });
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY <= 2) {
+    backTop?.classList.remove("rocket-trail");
+  }
+}, { passive: true });
 
 /* =========================================================
    HELPER
