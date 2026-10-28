@@ -3387,3 +3387,15 @@ img.social-icon-image[src*="telephone.png"],
   min-width: 26px !important;
   flex-basis: 26px !important;
 }
+
+
+/* Homepage telephone logo only: 24px on desktop and mobile. */
+.social-row .social-icon-image[src*="telephone.png"],
+.social-row .social:has(.social-icon-image[src*="telephone.png"]) {
+  width: 24px !important;
+  height: 24px !important;
+  min-width: 24px !important;
+  max-width: 24px !important;
+  max-height: 24px !important;
+  transform: none !important;
+}
