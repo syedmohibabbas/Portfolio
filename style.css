@@ -3764,3 +3764,29 @@ h1,h2,h3,.skill-card h3,.service-card h3,.certificate b,.contact-item b { color:
 [data-theme="light"] .footer {
   background: #0045C1 !important;
 }
+
+
+/* Full-bleed footer with all footer text in white. */
+.footer {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: max(6vw, 32px) !important;
+  padding-right: max(6vw, 32px) !important;
+  background: #0045C1 !important;
+  color: #FFFFFF !important;
+}
+.footer .brand-name,
+.footer p,
+.footer > span,
+.footer a,
+.footer a:visited {
+  color: #FFFFFF !important;
+}
+@media (max-width: 760px) {
+  .footer {
+    padding-left: 6% !important;
+    padding-right: 6% !important;
+  }
+}
