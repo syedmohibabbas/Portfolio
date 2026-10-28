@@ -3437,3 +3437,25 @@ img.social-icon-image[src*="telephone.png"],
     transform: scale(.96) !important;
   }
 }
+
+
+/* Homepage social icons: remove extra logo-specific effects and keep only the Hire Me-style press animation. */
+.social-row .social {
+  animation: none !important;
+  transition: transform .18s cubic-bezier(.22,.75,.2,1) !important;
+}
+.social-row .social:hover,
+.social-row .social:focus-visible {
+  animation: none !important;
+  transform: none !important;
+}
+.social-row .social:active,
+.social-row .social.pressed {
+  transform: scale(.96) !important;
+}
+
+/* Center the homepage telephone logo with the other social logos; remove the previous vertical offset. */
+.social-row .social-icon-image[src*="telephone.png"] {
+  top: auto !important;
+  vertical-align: middle !important;
+}
