@@ -3647,7 +3647,7 @@ h1,h2,h3,.skill-card h3,.service-card h3,.certificate b,.contact-item b { color:
 }
 
 
-/* Single central rocket fountain with light airy side streaks. */
+/* Rocket plume: narrow at the button, flaring wider downward, with airy side streaks. */
 .back-top {
   position: fixed;
   overflow: visible !important;
@@ -3662,16 +3662,18 @@ h1,h2,h3,.skill-card h3,.service-card h3,.certificate b,.contact-item b { color:
   position: absolute;
   left: 50%;
   top: calc(100% - 1px);
-  width: 42px;
-  height: 150px;
+  width: 118px;
+  height: 172px;
   transform: translateX(-50%);
   pointer-events: none;
   opacity: 1;
   background:
-    linear-gradient(to bottom, rgba(141,235,255,.95), rgba(0,90,255,0)) 3px 0 / 2px 74% no-repeat,
-    linear-gradient(to bottom, rgba(255,255,255,.95), rgba(0,166,255,0)) 10px 0 / 2px 100% no-repeat,
-    linear-gradient(to bottom, rgba(98,216,255,.9), rgba(0,90,255,0)) 31px 0 / 2px 82% no-repeat,
-    linear-gradient(to bottom, rgba(141,235,255,.9), rgba(0,90,255,0)) 38px 0 / 2px 68% no-repeat;
+    linear-gradient(to bottom, rgba(141,235,255,.95), rgba(0,90,255,0)) 8px 0 / 2px 76% no-repeat,
+    linear-gradient(to bottom, rgba(255,255,255,.95), rgba(0,166,255,0)) 20px 0 / 2px 96% no-repeat,
+    linear-gradient(to bottom, rgba(98,216,255,.9), rgba(0,90,255,0)) 31px 0 / 2px 83% no-repeat,
+    linear-gradient(to bottom, rgba(141,235,255,.9), rgba(0,90,255,0)) 86px 0 / 2px 80% no-repeat,
+    linear-gradient(to bottom, rgba(255,255,255,.9), rgba(0,166,255,0)) 97px 0 / 2px 100% no-repeat,
+    linear-gradient(to bottom, rgba(98,216,255,.9), rgba(0,90,255,0)) 108px 0 / 2px 72% no-repeat;
   filter: drop-shadow(0 0 3px rgba(0,191,255,.85));
   animation: backTopAiryStreaks .5s linear infinite;
   z-index: -1;
@@ -3681,26 +3683,33 @@ h1,h2,h3,.skill-card h3,.service-card h3,.certificate b,.contact-item b { color:
   position: absolute;
   left: 50%;
   top: calc(100% - 1px);
-  width: 8px;
-  height: 145px;
-  border-radius: 8px;
+  width: 142px;
+  height: 190px;
+  border-radius: 0;
   transform: translateX(-50%);
   pointer-events: none;
   opacity: 1;
-  background: linear-gradient(to bottom, #FFFFFF 0%, #8DEBFF 32%, #00A6FF 68%, rgba(0,90,255,0) 100%);
-  box-shadow: 0 0 5px #FFFFFF, 0 0 12px #00BFFF, 0 0 22px rgba(0,90,255,.95);
+  clip-path: polygon(
+    46% 0%, 54% 0%, 56% 10%, 59% 24%, 64% 42%,
+    70% 60%, 78% 80%, 84% 94%, 79% 91%, 74% 97%,
+    68% 93%, 62% 98%, 56% 94%, 50% 99%, 44% 94%,
+    38% 98%, 32% 93%, 26% 97%, 21% 92%, 16% 95%,
+    22% 78%, 29% 59%, 36% 40%, 41% 23%, 44% 10%
+  );
+  background: linear-gradient(to bottom, rgba(255,255,255,.98) 0%, #8DEBFF 20%, #00BFFF 48%, rgba(0,90,255,.7) 72%, rgba(0,90,255,0) 100%);
+  filter: drop-shadow(0 0 4px #00BFFF) drop-shadow(0 0 12px rgba(0,90,255,.85));
   animation: backTopFountainPulse .32s linear infinite;
   z-index: -1;
 }
 @keyframes backTopAiryStreaks {
-  0% { opacity: .7; transform: translateX(-50%) translateY(-5px) scaleY(.82); }
+  0% { opacity: .68; transform: translateX(-50%) translateY(-5px) scaleY(.82); }
   50% { opacity: 1; transform: translateX(-50%) translateY(4px) scaleY(1); }
   100% { opacity: .78; transform: translateX(-50%) translateY(13px) scaleY(.9); }
 }
 @keyframes backTopFountainPulse {
-  0% { opacity: .78; transform: translateX(-50%) translateY(-4px) scaleY(.88); }
-  50% { opacity: 1; transform: translateX(-50%) translateY(3px) scaleY(1); }
-  100% { opacity: .82; transform: translateX(-50%) translateY(11px) scaleY(.9); }
+  0% { opacity: .76; transform: translateX(-50%) translateY(-4px) scaleY(.88) scaleX(.94); }
+  50% { opacity: 1; transform: translateX(-50%) translateY(3px) scaleY(1) scaleX(1); }
+  100% { opacity: .82; transform: translateX(-50%) translateY(11px) scaleY(.9) scaleX(.97); }
 }
 @media (prefers-reduced-motion: reduce) {
   .back-top.rocket-trail::before,
