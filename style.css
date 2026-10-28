@@ -3499,3 +3499,106 @@ img.social-icon-image[src*="telephone.png"],
 .service-media .media-placeholder small {
   color: #ffffff !important;
 }
+
+
+/* Portfolio-wide visual refinement: restrained blue + green, light neutral surfaces. */
+:root,
+[data-theme="light"] {
+  --bg: #F7F9FC;
+  --light: #F7F9FC;
+  --text: #17212B;
+  --text-inverse: #FFFFFF;
+  --surface: rgba(255,255,255,.82);
+  --surface-strong: #FFFFFF;
+  --line: rgba(23,33,43,.09);
+  --line-strong: rgba(23,33,43,.16);
+  --muted: #5E6B78;
+  --muted-2: #7C8792;
+  --accent: #005AFF;
+  --accent-strong: #005AFF;
+  --navbar: #39A325;
+  --navbar-text: #FFFFFF;
+  --shadow: 0 18px 45px rgba(23,33,43,.08);
+}
+body {
+  background: radial-gradient(circle at 85% 8%, rgba(0,90,255,.045), transparent 27%),
+              radial-gradient(circle at 8% 52%, rgba(57,163,37,.035), transparent 24%),
+              var(--bg) !important;
+  color: var(--text) !important;
+}
+body::before {
+  background-image: linear-gradient(rgba(23,33,43,.018) 1px,transparent 1px),
+                    linear-gradient(90deg,rgba(23,33,43,.018) 1px,transparent 1px) !important;
+}
+.site-header,
+[data-theme="light"] .site-header {
+  background: #39A325 !important;
+  color: #FFFFFF !important;
+  border-bottom-color: rgba(255,255,255,.22) !important;
+  box-shadow: 0 5px 22px rgba(35,105,24,.10);
+}
+.site-header .brand-name,
+.site-header .nav-link,
+.site-header .menu-toggle,
+.site-header .theme-toggle {
+  color: #FFFFFF !important;
+}
+.site-header .nav-link.active::after { background: #FFFFFF !important; }
+.site-header .menu-toggle { border-color: rgba(255,255,255,.35) !important; background: rgba(255,255,255,.10) !important; }
+.site-header .menu-toggle span { background: #FFFFFF !important; }
+.brand-mark { border-color: rgba(255,255,255,.45) !important; background: rgba(255,255,255,.12) !important; }
+h1,h2,h3,.skill-card h3,.service-card h3,.certificate b,.contact-item b { color: #17212B; }
+.eyebrow,.card-label { color: #005AFF !important; }
+.hero-role { color: #3E5366 !important; }
+.hero-role span { color: #39A325 !important; }
+.hero-text,.section-intro>p:not(.eyebrow),.skill-card p,.service-card>p:not(.card-label),
+.certificate small,.footer,.stat-card small { color: #5E6B78 !important; }
+.btn-primary {
+  background: #005AFF !important;
+  color: #FFFFFF !important;
+  border-color: #005AFF !important;
+  box-shadow: 0 8px 20px rgba(0,90,255,.16) !important;
+}
+.btn-primary:hover { box-shadow: 0 12px 26px rgba(0,90,255,.22) !important; }
+.btn-ghost,.text-button,.tool-chip,.filter,.social,.skill-card,.stat-card,.service-card,.certificate,.contact-item {
+  background: rgba(255,255,255,.82) !important;
+  border-color: rgba(23,33,43,.09) !important;
+}
+.btn-ghost:hover,.text-button:hover,.tool-chip:hover,.filter:hover,.filter.active {
+  border-color: rgba(0,90,255,.28) !important;
+  background: rgba(0,90,255,.07) !important;
+  color: #005AFF !important;
+}
+.filter:hover,.filter.active { color: #005AFF !important; }
+.social { color: #005AFF !important; }
+.social:hover { border-color: rgba(0,90,255,.28) !important; background: rgba(0,90,255,.06) !important; }
+.stat-icon,.skill-symbol,.tool-chip b,.mini-icon,.contact-icon { color: #005AFF !important; }
+.tool-chip b { color: #39A325 !important; }
+.card-link { color: #005AFF !important; }
+.card-link:hover { color: #39A325 !important; }
+.portrait-frame { border-color: rgba(0,90,255,.45) !important; }
+.portrait-frame::before,.portrait-frame::after { border-color: #39A325 !important; }
+.portrait { background: linear-gradient(145deg,#E8F0FF,#F2F8F0 72%) !important; }
+.portrait::after { background: radial-gradient(circle at 52% 40%,rgba(0,90,255,.10),transparent 35%),linear-gradient(90deg,transparent 60%,rgba(23,33,43,.10)) !important; }
+.portrait-initials { color: rgba(0,90,255,.10) !important; }
+.portrait span,.quote,.info-card small,.availability-card small,.contact-item small { color: #667583 !important; }
+.glass { background: rgba(255,255,255,.84) !important; border-color: rgba(23,33,43,.09) !important; box-shadow: 0 12px 32px rgba(23,33,43,.07),inset 0 1px 0 rgba(255,255,255,.8) !important; }
+.availability-card strong,.info-card strong { color: #17212B !important; }
+.mini-icon { border-color: rgba(57,163,37,.20) !important; background: rgba(57,163,37,.07) !important; }
+.service-media.youtube-media { background: linear-gradient(135deg,#E8F0FF,#DDE8FF) !important; }
+.service-media.logo-media { background: linear-gradient(135deg,#EAF7E7,#DDF0D8) !important; }
+.service-media.portrait-media { background: linear-gradient(135deg,#EDF3FF,#E5F5E0) !important; }
+.service-media.automation-media { background: linear-gradient(135deg,#E3EDFF,#DDEFE0) !important; }
+.service-media.social-media { background: linear-gradient(135deg,#EAF2FF,#E8F5E4) !important; }
+.service-media.seo-media { background: linear-gradient(135deg,#E5F4E1,#DCEBFF) !important; }
+.service-media .media-placeholder,.service-media .media-placeholder span,.service-media .media-placeholder small { color: #005AFF !important; }
+.service-media .media-placeholder small { color: #39A325 !important; }
+.certificate-paper { background: #F1F4F7 !important; color: #425160 !important; border-color: #AAB5BF !important; }
+.footer { border-top-color: rgba(23,33,43,.09) !important; }
+.back-top { background: #005AFF !important; color: #FFFFFF !important; border-color: #005AFF !important; }
+.section { border-bottom-color: rgba(23,33,43,.08) !important; }
+#hireModal .modal-box.glass.hire-modal-box { background: #FFFFFF !important; }
+@media (max-width: 760px) {
+  .nav.open { background: #39A325 !important; border-color: rgba(255,255,255,.18) !important; }
+  .nav.open .nav-link { color: #FFFFFF !important; }
+}
