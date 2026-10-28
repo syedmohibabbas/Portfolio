@@ -3647,25 +3647,10 @@ h1,h2,h3,.skill-card h3,.service-card h3,.certificate b,.contact-item b { color:
 }
 
 
-/* Back-to-top rocket trail: keep the existing button design unchanged. */
+/* Back-to-top rocket boost: luminous speed streaks; the button itself stays unchanged. */
 .back-top {
   position: fixed;
   overflow: visible !important;
-}
-.back-top.rocket-trail::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: calc(100% - 5px);
-  top: auto;
-  width: 3px;
-  height: 23px;
-  border-radius: 4px;
-  background: linear-gradient(to top, rgba(255,255,255,.98), rgba(255,255,255,.58), transparent);
-  transform: translateX(-50%);
-  opacity: 0;
-  pointer-events: none;
-  animation: backTopRocketTrail .42s ease-in-out infinite;
 }
 .back-top.rocket-trail::before {
   content: "";
@@ -3673,22 +3658,47 @@ h1,h2,h3,.skill-card h3,.service-card h3,.certificate b,.contact-item b { color:
   left: 50%;
   bottom: calc(100% - 2px);
   top: auto;
-  width: 19px;
-  height: 21px;
+  width: 42px;
+  height: 190px;
   transform: translateX(-50%);
-  opacity: 0;
   pointer-events: none;
-  background: linear-gradient(to top, rgba(255,255,255,.78), transparent) left bottom / 2px 17px no-repeat,
-              linear-gradient(to top, rgba(255,255,255,.78), transparent) center bottom / 2px 21px no-repeat,
-              linear-gradient(to top, rgba(255,255,255,.78), transparent) right bottom / 2px 17px no-repeat;
-  animation: backTopRocketTrail .42s ease-in-out infinite;
+  opacity: 0;
+  background:
+    linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,.96) 28%, rgba(255,255,255,.10)) 2px bottom / 2px 105px no-repeat,
+    linear-gradient(to top, rgba(150,210,255,0), rgba(255,255,255,.98) 22%, rgba(130,195,255,.18)) 11px bottom / 3px 168px no-repeat,
+    linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,.98) 30%, rgba(255,255,255,.12)) 21px bottom / 2px 132px no-repeat,
+    linear-gradient(to top, rgba(150,210,255,0), rgba(255,255,255,.92) 24%, rgba(150,210,255,.10)) 31px bottom / 2px 90px no-repeat,
+    linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,.85) 32%, rgba(255,255,255,.08)) 39px bottom / 2px 145px no-repeat;
+  filter: drop-shadow(0 0 4px rgba(125,195,255,.8));
+  animation: backTopRocketStreaks .48s ease-in-out infinite;
+}
+.back-top.rocket-trail::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% - 2px);
+  top: auto;
+  width: 4px;
+  height: 145px;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  pointer-events: none;
+  opacity: 0;
+  background: linear-gradient(to top, rgba(255,255,255,0), #fff 28%, rgba(185,225,255,.82) 72%, transparent);
+  box-shadow: 0 0 8px rgba(120,195,255,.9), 0 0 18px rgba(120,195,255,.48);
+  animation: backTopRocketCore .34s ease-in-out infinite;
 }
 .back-top.rocket-trail::before,
 .back-top.rocket-trail::after { opacity: 1; }
-@keyframes backTopRocketTrail {
-  0% { opacity: .35; transform: translateX(-50%) translateY(3px) scaleY(.78); }
-  50% { opacity: 1; transform: translateX(-50%) translateY(-2px) scaleY(1); }
-  100% { opacity: .35; transform: translateX(-50%) translateY(-7px) scaleY(.72); }
+@keyframes backTopRocketStreaks {
+  0% { opacity: .55; transform: translateX(-50%) translateY(9px) scaleY(.82); }
+  50% { opacity: 1; transform: translateX(-50%) translateY(-5px) scaleY(1); }
+  100% { opacity: .65; transform: translateX(-50%) translateY(-18px) scaleY(.88); }
+}
+@keyframes backTopRocketCore {
+  0% { opacity: .45; transform: translateX(-50%) translateY(10px) scaleY(.8); }
+  50% { opacity: 1; transform: translateX(-50%) translateY(-5px) scaleY(1); }
+  100% { opacity: .55; transform: translateX(-50%) translateY(-16px) scaleY(.86); }
 }
 @media (prefers-reduced-motion: reduce) {
   .back-top.rocket-trail::before,
