@@ -3717,10 +3717,7 @@ h1,h2,h3,.skill-card h3,.service-card h3,.certificate b,.contact-item b { color:
 }
 
 
-/* Set all portfolio cards to the requested blue while preserving their existing opacity. */
-:root {
-  --card-bg: rgba(0, 90, 255, .84);
-}
+/* Match card backgrounds to the active “All” filter button tint. */
 .glass,
 .stat-card,
 .info-card,
@@ -3737,5 +3734,5 @@ h1,h2,h3,.skill-card h3,.service-card h3,.certificate b,.contact-item b { color:
 .file-placeholder,
 .portfolio-viewer-box,
 .modal-box {
-  background-color: rgba(0, 90, 255, .84) !important;
+  background-color: rgba(0, 90, 255, .07) !important;
 }
