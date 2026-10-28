@@ -3715,3 +3715,27 @@ h1,h2,h3,.skill-card h3,.service-card h3,.certificate b,.contact-item b { color:
   .back-top.rocket-trail::before,
   .back-top.rocket-trail::after { animation: none; }
 }
+
+
+/* Set all portfolio cards to the requested blue while preserving their existing opacity. */
+:root {
+  --card-bg: rgba(0, 90, 255, .84);
+}
+.glass,
+.stat-card,
+.info-card,
+.availability-card,
+.skill-card,
+.service-card,
+.certificate,
+.contact-item,
+.quote,
+.tool-chip,
+.hire-credential,
+.hire-contact,
+.certificate-placeholder,
+.file-placeholder,
+.portfolio-viewer-box,
+.modal-box {
+  background-color: rgba(0, 90, 255, .84) !important;
+}
