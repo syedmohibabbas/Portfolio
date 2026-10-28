@@ -3366,3 +3366,24 @@ img.social-icon-image[src*="facebook.png"],
   flex-basis: 28px !important;
   transform: none !important;
 }
+
+
+/* Final telephone logo size: 26px everywhere, on desktop and mobile. */
+img.social-icon-image[src*="telephone.png"],
+.contact-icon img[src*="telephone.png"],
+.hire-contact-icon img[src*="telephone.png"] {
+  width: 26px !important;
+  height: 26px !important;
+  min-width: 26px !important;
+  max-width: 26px !important;
+  max-height: 26px !important;
+  transform: none !important;
+}
+.social:has(.social-icon-image[src*="telephone.png"]),
+.contact-icon:has(img[src*="telephone.png"]),
+.hire-contact-icon:has(img[src*="telephone.png"]) {
+  width: 26px !important;
+  height: 26px !important;
+  min-width: 26px !important;
+  flex-basis: 26px !important;
+}
