@@ -1405,7 +1405,7 @@ animation:socialIconSettle .72s cubic-bezier(.2,.75,.25,1);
 HIRE ME MODAL
 ========================================================= */
 .hire-modal-box {
-width:min(680px,94%);
+width:min(560px,94%);
 padding:34px;
 }
 .hire-modal-intro {
