@@ -3609,3 +3609,16 @@ h1,h2,h3,.skill-card h3,.service-card h3,.certificate b,.contact-item b { color:
 .section-heading .eyebrow {
   display: none !important;
 }
+
+
+/* Navbar blue override requested on 2026-10-28 */
+.site-header,
+[data-theme="light"] .site-header,
+.nav.open,
+[data-theme="light"] .nav.open {
+  background: #005AFF !important;
+}
+:root,
+[data-theme="light"] {
+  --navbar: #005AFF !important;
+}
