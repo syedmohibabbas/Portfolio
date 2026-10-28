@@ -3736,3 +3736,24 @@ h1,h2,h3,.skill-card h3,.service-card h3,.certificate b,.contact-item b { color:
 .modal-box {
   background-color: rgba(0, 90, 255, .07) !important;
 }
+
+
+/* Per-section blue card opacity requested on 2026-10-28. */
+.hero-visual .availability-card,
+.hero-visual .info-card {
+  background-color: rgba(0, 90, 255, .08) !important;
+}
+.stats-grid .stat-card,
+.skills-content .skill-main-grid .skill-card,
+.service-grid .service-card,
+.certificate-grid .certificate,
+.contact-list .contact-item {
+  background-color: rgba(0, 90, 255, .10) !important;
+}
+.skills-content .tool-list .tool-chip {
+  background-color: rgba(0, 90, 255, .05) !important;
+}
+/* Remove only the decorative side streak lines; keep the central wavy plume. */
+.back-top.rocket-trail::before {
+  display: none !important;
+}
