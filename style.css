@@ -3459,3 +3459,43 @@ img.social-icon-image[src*="telephone.png"],
   top: auto !important;
   vertical-align: middle !important;
 }
+
+
+/* User-requested final tweaks: bottom-align homepage telephone and use the Hire Me press animation on every homepage social icon. */
+.social-row .social-icon-image[src*="telephone.png"] {
+  position: relative !important;
+  top: 4px !important;
+  vertical-align: baseline !important;
+}
+.social-row .social:has(.social-icon-image[src*="telephone.png"]) {
+  transition: transform .18s cubic-bezier(.22,.75,.2,1) !important;
+}
+.social-row .social:has(.social-icon-image[src*="telephone.png"]):active,
+.social-row .social:has(.social-icon-image[src*="telephone.png"]).pressed {
+  transform: scale(.96) !important;
+}
+
+/* Solid placeholder backgrounds using only the existing portfolio color palette, matched to each service niche. */
+.service-media.youtube-media { background: #ff0000 !important; }
+.service-media.logo-media { background: #9000FF !important; }
+.service-media.portrait-media { background: #ff6d00 !important; }
+.service-media.automation-media { background: #005AFF !important; }
+.service-media.social-media { background: #D500F9 !important; }
+.service-media.seo-media { background: #39a325 !important; }
+.service-media.youtube-media::after,
+.service-media.logo-media::after,
+.service-media.portrait-media::after,
+.service-media.automation-media::after,
+.service-media.social-media::after,
+.service-media.seo-media::after {
+  display: none !important;
+}
+.service-media .media-placeholder {
+  position: relative;
+  z-index: 1;
+  color: #ffffff !important;
+}
+.service-media .media-placeholder span,
+.service-media .media-placeholder small {
+  color: #ffffff !important;
+}
