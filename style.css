@@ -3333,3 +3333,36 @@ img.social-icon-image[src*="facebook.png"],
   min-width: 30px !important;
   flex-basis: 30px !important;
 }
+
+
+/* Final logo sizes: homepage social icons 28px; Contact Gmail 29px and telephone 28px. */
+.social-row .social-icon-image[src*="gmail.png"],
+.social-row .social-icon-image[src*="whatsapp.png"],
+.social-row .social-icon-image[src*="telephone.png"],
+.social-row .social-icon-image[src*="facebook.png"] {
+  width: 28px !important;
+  height: 28px !important;
+  max-width: 28px !important;
+  max-height: 28px !important;
+  transform: none !important;
+}
+.contact-list .contact-item a[href^="mailto:"] .contact-icon,
+.contact-list .contact-item a[href^="mailto:"] .contact-icon img {
+  width: 29px !important;
+  height: 29px !important;
+  min-width: 29px !important;
+  max-width: 29px !important;
+  max-height: 29px !important;
+  flex-basis: 29px !important;
+  transform: none !important;
+}
+.contact-list .contact-item a[href^="tel:"] .contact-icon,
+.contact-list .contact-item a[href^="tel:"] .contact-icon img {
+  width: 28px !important;
+  height: 28px !important;
+  min-width: 28px !important;
+  max-width: 28px !important;
+  max-height: 28px !important;
+  flex-basis: 28px !important;
+  transform: none !important;
+}
