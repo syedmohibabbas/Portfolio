@@ -3622,3 +3622,26 @@ h1,h2,h3,.skill-card h3,.service-card h3,.certificate b,.contact-item b { color:
 [data-theme="light"] {
   --navbar: #005AFF !important;
 }
+
+
+/* Exact requested colors: navbar and hero greeting */
+.site-header,
+[data-theme="light"] .site-header,
+.nav.open,
+[data-theme="light"] .nav.open {
+  background: #0045C1 !important;
+}
+:root,
+[data-theme="light"] {
+  --navbar: #0045C1 !important;
+}
+.hero .eyebrow,
+.hero .hero-eyebrow,
+.hero .greeting,
+.hero .hello-text,
+.hero h1 .eyebrow,
+.hero h1 .hello,
+.hero h1 .hello-im,
+.hero .hero-title .eyebrow {
+  color: #39A325 !important;
+}
