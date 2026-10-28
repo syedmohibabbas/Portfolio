@@ -3602,3 +3602,10 @@ h1,h2,h3,.skill-card h3,.service-card h3,.certificate b,.contact-item b { color:
   .nav.open { background: #39A325 !important; border-color: rgba(255,255,255,.18) !important; }
   .nav.open .nav-link { color: #FFFFFF !important; }
 }
+
+
+/* Hide section eyebrow labels (About Me, My Skills, etc.) while keeping the hero "HELLO, I'M". */
+.section-intro > .eyebrow,
+.section-heading .eyebrow {
+  display: none !important;
+}
