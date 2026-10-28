@@ -3294,3 +3294,42 @@ body { background:#FFFFFF !important; color:#000000 !important; }
   height: 30px !important;
   flex-basis: 30px !important;
 }
+
+
+/* All uploaded contact/social logos: fixed 30px display size on desktop and mobile. */
+img.social-icon-image[src*="gmail.png"],
+img.social-icon-image[src*="whatsapp.png"],
+img.social-icon-image[src*="telephone.png"],
+img.social-icon-image[src*="facebook.png"],
+.contact-icon img[src*="gmail.png"],
+.contact-icon img[src*="whatsapp.png"],
+.contact-icon img[src*="telephone.png"],
+.contact-icon img[src*="facebook.png"],
+.hire-contact-icon img[src*="gmail.png"],
+.hire-contact-icon img[src*="whatsapp.png"],
+.hire-contact-icon img[src*="telephone.png"],
+.hire-contact-icon img[src*="facebook.png"] {
+  width: 30px !important;
+  height: 30px !important;
+  max-width: 30px !important;
+  max-height: 30px !important;
+  transform: none !important;
+  object-fit: contain !important;
+}
+.social:has(.social-icon-image[src*="gmail.png"]),
+.social:has(.social-icon-image[src*="whatsapp.png"]),
+.social:has(.social-icon-image[src*="telephone.png"]),
+.social:has(.social-icon-image[src*="facebook.png"]),
+.contact-icon:has(img[src*="gmail.png"]),
+.contact-icon:has(img[src*="whatsapp.png"]),
+.contact-icon:has(img[src*="telephone.png"]),
+.contact-icon:has(img[src*="facebook.png"]),
+.hire-contact-icon:has(img[src*="gmail.png"]),
+.hire-contact-icon:has(img[src*="whatsapp.png"]),
+.hire-contact-icon:has(img[src*="telephone.png"]),
+.hire-contact-icon:has(img[src*="facebook.png"]) {
+  width: 30px !important;
+  height: 30px !important;
+  min-width: 30px !important;
+  flex-basis: 30px !important;
+}
