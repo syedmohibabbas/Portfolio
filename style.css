@@ -21,7 +21,7 @@
   --accent-strong: #E9EDEF;
 
   /* Same charcoal navbar in both themes */
-  --navbar: #24272A;
+  --navbar: #005AFF;
   --navbar-text: #E9EDEF;
 
   /* Theme-independent */
@@ -2490,7 +2490,7 @@ body {
 
 .site-header,
 [data-theme="light"] .site-header {
-  background: #000000 !important;
+  background: #005AFF !important;
 }
 
 .site-header .brand-name,
@@ -3599,7 +3599,7 @@ h1,h2,h3,.skill-card h3,.service-card h3,.certificate b,.contact-item b { color:
 .section { border-bottom-color: rgba(23,33,43,.08) !important; }
 #hireModal .modal-box.glass.hire-modal-box { background: #FFFFFF !important; }
 @media (max-width: 760px) {
-  .nav.open { background: #39A325 !important; border-color: rgba(255,255,255,.18) !important; }
+  .nav.open { background: #005AFF !important; border-color: rgba(255,255,255,.18) !important; }
   .nav.open .nav-link { color: #FFFFFF !important; }
 }
 
