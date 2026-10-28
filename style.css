@@ -3647,14 +3647,14 @@ h1,h2,h3,.skill-card h3,.service-card h3,.certificate b,.contact-item b { color:
 }
 
 
-/* Back-to-top rocket boost: trail below the button while it lifts slightly. */
+/* High-visibility rocket exhaust below the lifted back-to-top button. */
 .back-top {
   position: fixed;
   overflow: visible !important;
   transition: transform .38s cubic-bezier(.22,.8,.25,1), opacity .3s var(--ease) !important;
 }
 .back-top.rocket-trail {
-  transform: translateY(-32px) !important;
+  transform: translateY(-42px) !important;
 }
 .back-top.rocket-trail::before {
   content: "";
@@ -3662,19 +3662,20 @@ h1,h2,h3,.skill-card h3,.service-card h3,.certificate b,.contact-item b { color:
   left: 50%;
   top: calc(100% - 1px);
   bottom: auto;
-  width: 42px;
+  width: 44px;
   height: 190px;
   transform: translateX(-50%);
   pointer-events: none;
   opacity: 0;
   background:
-    linear-gradient(to bottom, rgba(255,255,255,.96), rgba(255,255,255,0)) 2px top / 2px 105px no-repeat,
-    linear-gradient(to bottom, rgba(255,255,255,.98), rgba(130,195,255,.10)) 11px top / 3px 168px no-repeat,
-    linear-gradient(to bottom, rgba(255,255,255,.98), rgba(255,255,255,.08)) 21px top / 2px 132px no-repeat,
-    linear-gradient(to bottom, rgba(255,255,255,.92), rgba(150,210,255,.08)) 31px top / 2px 90px no-repeat,
-    linear-gradient(to bottom, rgba(255,255,255,.85), rgba(255,255,255,.06)) 39px top / 2px 145px no-repeat;
-  filter: drop-shadow(0 0 4px rgba(125,195,255,.8));
-  animation: backTopRocketStreaks .48s ease-in-out infinite;
+    linear-gradient(to bottom, #FFFFFF 0%, #62D8FF 48%, rgba(0,90,255,0) 100%) 1px top / 4px 145px no-repeat,
+    linear-gradient(to bottom, #FFFFFF 0%, #35BFFF 48%, rgba(0,90,255,0) 100%) 10px top / 4px 178px no-repeat,
+    linear-gradient(to bottom, #FFFFFF 0%, #8DEBFF 48%, rgba(0,90,255,0) 100%) 20px top / 4px 160px no-repeat,
+    linear-gradient(to bottom, #FFFFFF 0%, #35BFFF 48%, rgba(0,90,255,0) 100%) 30px top / 4px 132px no-repeat,
+    linear-gradient(to bottom, #FFFFFF 0%, #62D8FF 48%, rgba(0,90,255,0) 100%) 39px top / 4px 170px no-repeat;
+  filter: drop-shadow(0 0 3px #00BFFF) drop-shadow(0 0 8px rgba(0,90,255,.9));
+  animation: backTopRocketStreaks .42s linear infinite;
+  z-index: -1;
 }
 .back-top.rocket-trail::after {
   content: "";
@@ -3682,27 +3683,28 @@ h1,h2,h3,.skill-card h3,.service-card h3,.certificate b,.contact-item b { color:
   left: 50%;
   top: calc(100% - 1px);
   bottom: auto;
-  width: 4px;
-  height: 145px;
-  border-radius: 5px;
+  width: 7px;
+  height: 150px;
+  border-radius: 6px;
   transform: translateX(-50%);
   pointer-events: none;
   opacity: 0;
-  background: linear-gradient(to bottom, #fff, rgba(185,225,255,.82) 45%, transparent);
-  box-shadow: 0 0 8px rgba(120,195,255,.9), 0 0 18px rgba(120,195,255,.48);
-  animation: backTopRocketCore .34s ease-in-out infinite;
+  background: linear-gradient(to bottom, #FFFFFF 0%, #8DEBFF 35%, #00A6FF 68%, rgba(0,90,255,0) 100%);
+  box-shadow: 0 0 5px #FFFFFF, 0 0 12px #00BFFF, 0 0 22px rgba(0,90,255,.95);
+  animation: backTopRocketCore .3s linear infinite;
+  z-index: -1;
 }
 .back-top.rocket-trail::before,
 .back-top.rocket-trail::after { opacity: 1; }
 @keyframes backTopRocketStreaks {
-  0% { opacity: .55; transform: translateX(-50%) translateY(-4px) scaleY(.82); }
-  50% { opacity: 1; transform: translateX(-50%) translateY(5px) scaleY(1); }
-  100% { opacity: .65; transform: translateX(-50%) translateY(14px) scaleY(.88); }
+  0% { opacity: .72; transform: translateX(-50%) translateY(-8px) scaleY(.8); }
+  50% { opacity: 1; transform: translateX(-50%) translateY(4px) scaleY(1); }
+  100% { opacity: .82; transform: translateX(-50%) translateY(16px) scaleY(.9); }
 }
 @keyframes backTopRocketCore {
-  0% { opacity: .45; transform: translateX(-50%) translateY(-5px) scaleY(.8); }
+  0% { opacity: .65; transform: translateX(-50%) translateY(-8px) scaleY(.78); }
   50% { opacity: 1; transform: translateX(-50%) translateY(5px) scaleY(1); }
-  100% { opacity: .55; transform: translateX(-50%) translateY(13px) scaleY(.86); }
+  100% { opacity: .72; transform: translateX(-50%) translateY(16px) scaleY(.86); }
 }
 @media (prefers-reduced-motion: reduce) {
   .back-top.rocket-trail::before,
