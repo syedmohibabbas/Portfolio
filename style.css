@@ -3399,3 +3399,41 @@ img.social-icon-image[src*="telephone.png"],
   max-height: 24px !important;
   transform: none !important;
 }
+
+
+/* Homepage social logos: use the same subtle press-down animation as Hire Me. */
+.social-row .social {
+  transition: transform .18s cubic-bezier(.22,.75,.2,1) !important;
+  -webkit-tap-highlight-color: transparent;
+}
+.social-row .social:active,
+.social-row .social.pressed {
+  transform: scale(.96) !important;
+}
+
+/* Keep the smaller homepage telephone icon bottom-aligned with the other logos. */
+.social-row .social-icon-image[src*="telephone.png"] {
+  position: relative !important;
+  top: 4px !important;
+}
+
+/* Mobile popup navigation buttons: matching Hire Me press-down animation. */
+@media (max-width: 760px) {
+  .nav a,
+  .mobile-nav a,
+  .nav-menu a,
+  .nav-link {
+    transition: transform .18s cubic-bezier(.22,.75,.2,1), background .18s ease, opacity .18s ease !important;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .nav a:active,
+  .mobile-nav a:active,
+  .nav-menu a:active,
+  .nav-link:active,
+  .nav a.pressed,
+  .mobile-nav a.pressed,
+  .nav-menu a.pressed,
+  .nav-link.pressed {
+    transform: scale(.96) !important;
+  }
+}
