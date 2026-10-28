@@ -3656,11 +3656,12 @@ h1,h2,h3,.skill-card h3,.service-card h3,.certificate b,.contact-item b { color:
   content: "";
   position: absolute;
   left: 50%;
-  top: calc(100% + 5px);
+  bottom: calc(100% - 5px);
+  top: auto;
   width: 3px;
   height: 23px;
   border-radius: 4px;
-  background: linear-gradient(to bottom, rgba(255,255,255,.95), rgba(255,255,255,.58), transparent);
+  background: linear-gradient(to top, rgba(255,255,255,.98), rgba(255,255,255,.58), transparent);
   transform: translateX(-50%);
   opacity: 0;
   pointer-events: none;
@@ -3670,23 +3671,24 @@ h1,h2,h3,.skill-card h3,.service-card h3,.certificate b,.contact-item b { color:
   content: "";
   position: absolute;
   left: 50%;
-  top: calc(100% + 8px);
+  bottom: calc(100% - 2px);
+  top: auto;
   width: 19px;
   height: 21px;
   transform: translateX(-50%);
   opacity: 0;
   pointer-events: none;
-  background: linear-gradient(to bottom, rgba(255,255,255,.78), transparent) left top / 2px 17px no-repeat,
-              linear-gradient(to bottom, rgba(255,255,255,.78), transparent) center top / 2px 21px no-repeat,
-              linear-gradient(to bottom, rgba(255,255,255,.78), transparent) right top / 2px 17px no-repeat;
+  background: linear-gradient(to top, rgba(255,255,255,.78), transparent) left bottom / 2px 17px no-repeat,
+              linear-gradient(to top, rgba(255,255,255,.78), transparent) center bottom / 2px 21px no-repeat,
+              linear-gradient(to top, rgba(255,255,255,.78), transparent) right bottom / 2px 17px no-repeat;
   animation: backTopRocketTrail .42s ease-in-out infinite;
 }
 .back-top.rocket-trail::before,
 .back-top.rocket-trail::after { opacity: 1; }
 @keyframes backTopRocketTrail {
-  0% { opacity: .35; transform: translateX(-50%) translateY(-3px) scaleY(.78); }
-  50% { opacity: 1; transform: translateX(-50%) translateY(2px) scaleY(1); }
-  100% { opacity: .35; transform: translateX(-50%) translateY(7px) scaleY(.72); }
+  0% { opacity: .35; transform: translateX(-50%) translateY(3px) scaleY(.78); }
+  50% { opacity: 1; transform: translateX(-50%) translateY(-2px) scaleY(1); }
+  100% { opacity: .35; transform: translateX(-50%) translateY(-7px) scaleY(.72); }
 }
 @media (prefers-reduced-motion: reduce) {
   .back-top.rocket-trail::before,
