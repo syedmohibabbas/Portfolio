@@ -548,19 +548,38 @@ window.addEventListener(
   { passive: true }
 );
 
-backTop?.addEventListener("click", () => {
-  backTop.classList.add("rocket-trail");
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-});
+let rocketScrollFrame = 0;
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY <= 2) {
-    backTop?.classList.remove("rocket-trail");
+backTop?.addEventListener("click", () => {
+  if (rocketScrollFrame) cancelAnimationFrame(rocketScrollFrame);
+
+  const startY = window.scrollY;
+  if (startY <= 2) return;
+
+  backTop.classList.add("rocket-trail");
+
+  // Keep the scroll speed consistent: longer distance means proportionally
+  // longer travel time, so the rocket effect finishes exactly at the top.
+  const pixelsPerMs = 2.6;
+  const duration = startY / pixelsPerMs;
+  const startTime = performance.now();
+
+  function travelToTop(now) {
+    const elapsed = now - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    window.scrollTo(0, Math.round(startY * (1 - progress)));
+
+    if (progress < 1) {
+      rocketScrollFrame = requestAnimationFrame(travelToTop);
+    } else {
+      rocketScrollFrame = 0;
+      window.scrollTo(0, 0);
+      backTop.classList.remove("rocket-trail");
+    }
   }
-}, { passive: true });
+
+  rocketScrollFrame = requestAnimationFrame(travelToTop);
+});
 
 /* =========================================================
    HELPER
