@@ -3654,7 +3654,7 @@ h1,h2,h3,.skill-card h3,.service-card h3,.certificate b,.contact-item b { color:
   transition: transform .38s cubic-bezier(.22,.8,.25,1), opacity .3s var(--ease) !important;
 }
 .back-top.rocket-trail {
-  transform: translateY(-24px) !important;
+  transform: translateY(-32px) !important;
 }
 .back-top.rocket-trail::before {
   content: "";
