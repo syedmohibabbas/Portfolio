@@ -3847,3 +3847,16 @@ h1,h2,h3,.skill-card h3,.service-card h3,.certificate b,.contact-item b { color:
 img {
   backface-visibility: hidden;
 }
+
+
+/* Requested: fully opaque light background for Learn More and View All Certificates popups only. */
+#serviceModal .modal-box,
+#serviceModal .modal-box.glass,
+#certificateModal .modal-box,
+#certificateModal .modal-box.glass {
+  background: #F7F9FC !important;
+  background-color: #F7F9FC !important;
+  opacity: 1 !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
