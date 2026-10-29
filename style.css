@@ -3800,3 +3800,11 @@ h1,h2,h3,.skill-card h3,.service-card h3,.certificate b,.contact-item b { color:
   border-color: rgba(0, 90, 255, .28) !important;
   color: #005AFF !important;
 }
+
+
+/* Tool button text at 60% opacity; keep icon artwork unchanged. */
+.skills-content .tool-list .tool-chip,
+.skills-content .tool-list .tool-chip:hover,
+.skills-content .tool-list .tool-chip:focus-visible {
+  color: rgba(0, 90, 255, .6) !important;
+}
