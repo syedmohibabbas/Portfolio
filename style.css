@@ -3790,3 +3790,13 @@ h1,h2,h3,.skill-card h3,.service-card h3,.certificate b,.contact-item b { color:
     padding-right: 6% !important;
   }
 }
+
+
+/* Keep the six software/tool buttons in their existing blue hover color even when not hovered. */
+.skills-content .tool-list .tool-chip,
+.skills-content .tool-list .tool-chip:hover,
+.skills-content .tool-list .tool-chip:focus-visible {
+  background: rgba(0, 90, 255, .07) !important;
+  border-color: rgba(0, 90, 255, .28) !important;
+  color: #005AFF !important;
+}
