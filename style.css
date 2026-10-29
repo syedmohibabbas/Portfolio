@@ -3818,3 +3818,32 @@ h1,h2,h3,.skill-card h3,.service-card h3,.certificate b,.contact-item b { color:
 .skills-content .tool-list .tool-chip:focus-visible {
   color: #005AFF !important;
 }
+
+
+/* Performance-only tuning: preserve layout, colors, sizing and all existing interactions. */
+@media (prefers-reduced-motion: no-preference) {
+  .site-header,
+  .nav-link,
+  .menu-toggle,
+  .btn-primary,
+  .btn-ghost,
+  .text-button,
+  .social,
+  .tool-chip,
+  .filter,
+  .skill-card,
+  .stat-card,
+  .service-card,
+  .certificate,
+  .contact-item,
+  .back-top,
+  .modal-box,
+  .hero-name .hero-letter {
+    backface-visibility: hidden;
+  }
+}
+
+/* Keep image decoding from blocking the first paint; images and their dimensions stay unchanged. */
+img {
+  backface-visibility: hidden;
+}
