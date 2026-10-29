@@ -3808,3 +3808,13 @@ h1,h2,h3,.skill-card h3,.service-card h3,.certificate b,.contact-item b { color:
 .skills-content .tool-list .tool-chip:focus-visible {
   color: rgba(0, 90, 255, .6) !important;
 }
+
+
+/* Tool text is 60% normally and returns to full opacity on hover/focus. */
+.skills-content .tool-list .tool-chip {
+  color: rgba(0, 90, 255, .6) !important;
+}
+.skills-content .tool-list .tool-chip:hover,
+.skills-content .tool-list .tool-chip:focus-visible {
+  color: #005AFF !important;
+}
