@@ -3922,3 +3922,17 @@ img {
 .site-header .nav-link.active::after {
   width: 100%;
 }
+
+
+/* Navbar underline: expand smoothly outward from the center. */
+.site-header .nav-link::after {
+  left: 50% !important;
+  right: auto !important;
+  width: 0 !important;
+  transform: translateX(-50%);
+  transition: width .32s cubic-bezier(.22,.75,.2,1) !important;
+}
+.site-header .nav-link:hover::after,
+.site-header .nav-link.active::after {
+  width: 100% !important;
+}
