@@ -3900,3 +3900,25 @@ img {
 .site-header .menu-toggle span { background: #17212B !important; }
 .site-header .theme-toggle { color: #17212B !important; border-color: rgba(23,33,43,.16) !important; background: rgba(23,33,43,.04) !important; }
 .brand-mark { border-color: rgba(23,33,43,.16) !important; background: rgba(23,33,43,.04) !important; }
+
+
+/* Navbar hover underline: smoothly reveal from left to right. */
+.site-header .nav-link {
+  position: relative !important;
+}
+.site-header .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: auto !important;
+  bottom: 20px;
+  width: 0;
+  height: 2px;
+  border-radius: 99px;
+  background: #005AFF !important;
+  transition: width .28s cubic-bezier(.22,.75,.2,1) !important;
+}
+.site-header .nav-link:hover::after,
+.site-header .nav-link.active::after {
+  width: 100%;
+}
