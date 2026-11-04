@@ -3860,3 +3860,21 @@ img {
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
 }
+
+
+/* Service thumbnails: consistent 16:9 cards */
+.service-media {
+  width: 100%;
+  height: auto !important;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 8px;
+}
+.service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.service-card .card-link {
+  margin-top: 0;
+  padding-top: 0;
+}
