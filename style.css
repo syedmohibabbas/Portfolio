@@ -3878,3 +3878,25 @@ img {
   margin-top: 0;
   padding-top: 0;
 }
+
+
+/* Navbar matches the exact page background */
+.site-header,
+[data-theme="light"] .site-header,
+.nav.open,
+[data-theme="light"] .nav.open {
+  background: #F7F9FC !important;
+  color: #17212B !important;
+  border-bottom-color: rgba(23,33,43,.09) !important;
+  box-shadow: 0 5px 22px rgba(23,33,43,.04) !important;
+}
+.site-header .brand-name,
+.site-header .nav-link,
+.site-header .menu-toggle,
+.site-header .theme-toggle,
+.nav.open .nav-link { color: #17212B !important; }
+.site-header .nav-link.active::after { background: #005AFF !important; }
+.site-header .menu-toggle { border-color: rgba(23,33,43,.16) !important; background: rgba(23,33,43,.04) !important; }
+.site-header .menu-toggle span { background: #17212B !important; }
+.site-header .theme-toggle { color: #17212B !important; border-color: rgba(23,33,43,.16) !important; background: rgba(23,33,43,.04) !important; }
+.brand-mark { border-color: rgba(23,33,43,.16) !important; background: rgba(23,33,43,.04) !important; }
