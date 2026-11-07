@@ -29,6 +29,8 @@ menuToggle?.addEventListener("click", () => {
 
 document.querySelectorAll(".nav-link").forEach(link => {
   link.addEventListener("click", () => {
+    document.querySelectorAll(".nav-link").forEach(item => item.classList.remove("active"));
+    link.classList.add("active");
     nav?.classList.remove("open");
     menuToggle?.setAttribute("aria-expanded", "false");
   });
