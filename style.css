@@ -3943,3 +3943,39 @@ img {
 [data-theme="light"] .site-header {
   box-shadow: 0 4px 16px rgba(23, 33, 43, .09) !important;
 }
+
+
+/* Refine navbar shadow, remove the logo placeholder styling, and set brand text blue. */
+.site-header,
+[data-theme="light"] .site-header {
+  box-shadow: 0 3px 12px rgba(23, 33, 43, .045) !important;
+}
+.site-header .brand-mark.logo-switch {
+  border: 0 !important;
+  outline: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+.site-header .brand-name {
+  color: #005AFF !important;
+}
+
+/* Keep the underline centered beneath each nav label and animate outward evenly. */
+.site-header .nav-link {
+  position: relative !important;
+}
+.site-header .nav-link::after {
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  transform: scaleX(0) !important;
+  transform-origin: center center !important;
+  transition: transform .32s cubic-bezier(.22,.75,.2,1) !important;
+}
+.site-header .nav-link:hover::after,
+.site-header .nav-link.active::after {
+  width: 100% !important;
+  transform: scaleX(1) !important;
+}
