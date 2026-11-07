@@ -3936,3 +3936,10 @@ img {
 .site-header .nav-link.active::after {
   width: 100% !important;
 }
+
+
+/* Subtle downward navbar shadow for gentle separation from the page. */
+.site-header,
+[data-theme="light"] .site-header {
+  box-shadow: 0 4px 16px rgba(23, 33, 43, .09) !important;
+}
