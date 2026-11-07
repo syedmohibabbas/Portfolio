@@ -4055,3 +4055,42 @@ img {
 .site-header .nav-link.active::after {
   transform: scaleX(1) !important;
 }
+
+
+/* Navbar interaction: animate only the label, never the underline. */
+.site-header .nav-link {
+  transform: none !important;
+  transition: color .22s ease, opacity .22s ease !important;
+  -webkit-tap-highlight-color: transparent;
+}
+.site-header .nav-link .nav-label {
+  display: inline-block;
+  transform: scale(1);
+  transition: transform .18s cubic-bezier(.22,.75,.2,1) !important;
+}
+.site-header .nav-link:active,
+.site-header .nav-link.pressed {
+  transform: none !important;
+}
+.site-header .nav-link:active .nav-label,
+.site-header .nav-link.pressed .nav-label {
+  transform: scale(.94) !important;
+}
+/* Hover may show the line, but selecting a section hides it even while hovered. */
+.site-header .nav-link::after {
+  bottom: -4px !important;
+  transform: scaleX(0) !important;
+  transition: transform .32s cubic-bezier(.22,.75,.2,1) !important;
+}
+.site-header .nav-link:not(.active):hover::after {
+  transform: scaleX(1) !important;
+}
+.site-header .nav-link.active::after,
+.site-header .nav-link:active::after,
+.site-header .nav-link.pressed::after {
+  transform: scaleX(0) !important;
+}
+.site-header .nav-link.active,
+.site-header .nav-link.active:hover {
+  color: #005AFF !important;
+}
