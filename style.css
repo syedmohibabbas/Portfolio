@@ -4094,3 +4094,9 @@ img {
 .site-header .nav-link.active:hover {
   color: #005AFF !important;
 }
+
+
+/* Navbar brand name: use a refined serif typeface, keeping its existing size and color. */
+.site-header .brand-name {
+  font-family: Georgia, "Times New Roman", serif !important;
+}
