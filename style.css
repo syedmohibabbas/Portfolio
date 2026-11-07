@@ -4107,3 +4107,11 @@ img {
   font-size: 15px !important;
   color: #17212B !important;
 }
+
+
+/* Mobile navbar brand: return to the original 13px size. */
+@media (max-width: 760px) {
+  .site-header .brand-name {
+    font-size: 13px !important;
+  }
+}
