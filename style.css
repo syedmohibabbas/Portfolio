@@ -4023,3 +4023,35 @@ img {
 .site-header .nav-link:active::after {
   transform: scaleX(0) !important;
 }
+
+
+/* Final navbar state: maximum brand weight and a persistent active-section indicator. */
+.site-header .brand-name {
+  font-weight: 1000 !important;
+  color: #005AFF !important;
+}
+.site-header .nav-link {
+  color: #17212B !important;
+  opacity: 1 !important;
+  transition: color .22s ease, opacity .22s ease !important;
+}
+.site-header .nav-link:hover,
+.site-header .nav-link.active {
+  color: #005AFF !important;
+  opacity: 1 !important;
+}
+.site-header .nav-link::after {
+  left: 0 !important;
+  right: 0 !important;
+  bottom: -4px !important;
+  width: 100% !important;
+  height: 2px !important;
+  background: #005AFF !important;
+  transform: scaleX(0) !important;
+  transform-origin: center center !important;
+  transition: transform .32s cubic-bezier(.22,.75,.2,1) !important;
+}
+.site-header .nav-link:hover::after,
+.site-header .nav-link.active::after {
+  transform: scaleX(1) !important;
+}
