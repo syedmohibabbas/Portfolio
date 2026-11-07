@@ -3979,3 +3979,47 @@ img {
   width: 100% !important;
   transform: scaleX(1) !important;
 }
+
+
+/* Navbar brand: retain the same size and make the name substantially bolder. */
+.site-header .brand-name {
+  font-weight: 900 !important;
+  color: #005AFF !important;
+}
+
+/* Navigation links turn blue on hover; the underline is hover-only, not click/active. */
+.site-header .nav-link {
+  color: #17212B !important;
+  transition: color .22s ease, opacity .22s ease !important;
+}
+.site-header .nav-link:hover {
+  color: #005AFF !important;
+  opacity: 1 !important;
+}
+.site-header .nav-link.active {
+  color: #17212B !important;
+  opacity: 1 !important;
+}
+
+/* Keep the underline inside the navbar, close to its lower edge. */
+.site-header .nav-link::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: -20px !important;
+  width: 100% !important;
+  height: 2px !important;
+  border-radius: 99px !important;
+  background: #005AFF !important;
+  transform: scaleX(0) !important;
+  transform-origin: center center !important;
+  transition: transform .32s cubic-bezier(.22,.75,.2,1) !important;
+}
+.site-header .nav-link:hover::after {
+  transform: scaleX(1) !important;
+}
+.site-header .nav-link.active::after,
+.site-header .nav-link:active::after {
+  transform: scaleX(0) !important;
+}
