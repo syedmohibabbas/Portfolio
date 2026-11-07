@@ -4100,3 +4100,10 @@ img {
 .site-header .brand-name {
   font-family: Georgia, "Times New Roman", serif !important;
 }
+
+
+/* Navbar brand refinement: slightly larger serif text in charcoal. */
+.site-header .brand-name {
+  font-size: 15px !important;
+  color: #17212B !important;
+}
