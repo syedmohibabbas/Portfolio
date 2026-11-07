@@ -4078,7 +4078,7 @@ img {
 }
 /* Hover may show the line, but selecting a section hides it even while hovered. */
 .site-header .nav-link::after {
-  bottom: -4px !important;
+  bottom: 23px !important;
   transform: scaleX(0) !important;
   transition: transform .32s cubic-bezier(.22,.75,.2,1) !important;
 }
